@@ -1,0 +1,78 @@
+@font-face{
+    font-family: Merriweather-Light;
+    src:url(/Merriweather-Light.ttf) ;
+}
+.container-section-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    .div-titulo-servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:30px;
+        
+
+    .titulo-servicios{
+        font-family: Merriweather-Regular;
+        border: solid #cb9b13;
+        font-size: 30px;
+        color:#cb9b13;
+        text-align: center;
+        width: 100%;
+        margin:0px;
+        padding: 15px 30px;
+        
+     }
+    }
+    .container-tipos-servicios{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        margin-top: 15px;
+        @media(max-width:575px) {
+            width: 90%;
+          }
+
+        .div-servicio{
+            margin: 15px;
+            margin-bottom:30px;
+            max-width:25%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @media(max-width:575px) {
+                max-width: 80%;
+              }
+            
+            h3{
+                font-family: Merriweather-Regular;
+                font-size: 20px;
+               color: #cb9b13;
+               margin-top: 0;
+               margin-bottom: 5px;
+               letter-spacing: 1.25px;
+             }
+            p{
+                color: white;
+                width: 80%;
+                font-size: 18px;
+                font-family:Merriweather-Light; 
+                
+            
+
+            }
+        }
+        
+    }
+}
+.separador-estrella-2{
+    @extend .separador-estrella;
+    background-color: black;
+    
+}

@@ -1,0 +1,58 @@
+@font-face{
+    font-family: Merriweather-Light;
+    src:url(/Merriweather-Light.ttf) ;
+}
+@font-face{
+    font-family: Merriweather-Regular;
+    src:url(/Merriweather-Regular.ttf) ;
+}
+.container-section-galeria{
+    @extend .container-section-mensaje;
+    background-color: black;
+    padding-bottom: 0;
+    
+    
+    .section-galeria{
+        
+        padding-bottom: 30px;
+
+    .div-section-galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .section-galeria-texto{ 
+            letter-spacing: 2px;
+            font-family: Merriweather-Regular;
+            background-color: #cb9b13;           
+            color:#CABEB2;
+            padding: 15px 40px;
+            margin-top: 0;
+            margin-bottom: 60px;
+            
+            
+        }
+    }
+}
+    .container-galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .galeria-img{
+            border: solid #cb9b13;
+            margin: 15px;
+            max-width:20rem ;
+        }
+    }
+}
+
+//hover fotos
+.container-galeria{
+    .galeria-img:hover{
+        transition: all 0.25s;
+        cursor: pointer;
+        opacity:0.6;
+        
+    }
+}

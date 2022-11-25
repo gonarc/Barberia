@@ -1,0 +1,15 @@
+
+.container-section-principal{
+    display: flex;
+    justify-content: center;
+    background-color:black;
+
+    .container-section-foto{
+        margin: 30px;
+
+        .foto-titulo{
+            padding: 0;
+        
+        }
+    }
+}
